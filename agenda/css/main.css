@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&family=Staatliches&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2 {
+    font-family: 'Staatliches', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+}
+main {
+    width: 90vw;
+    margin: 1.25rem auto;
+}
+
+h1, h4, #attendance {
+    text-align: center;
+}
+
+#attendance {
+    margin: 1.25rem auto;
+    max-width: 500px;
+}
+#attendance .examples {
+    font-size: 0.8rem;
+}
+
+#overview {
+    max-width: 600px;
+    margin: 1.25rem auto;
+    font-size: 1.25rem;
+}
+
+#timeline {
+    max-width: 700px;
+    margin: 0px auto;
+    list-style-type: "\1F319";
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+}
+#timeline li {
+    padding-left: 0.5rem;
+}
+
+#fact {
+    max-width: 400px;
+    margin: 3rem auto 0px auto;
+    font-size: 1.125rem;
+}
+#fact strong {
+    display: block;
+    text-align: center;
+}
