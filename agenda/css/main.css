@@ -25,14 +25,17 @@ h1, h4, #attendance {
 
 #attendance {
     margin: 1.25rem auto;
-    max-width: 500px;
+    max-width: 80vw;
 }
 #attendance .examples {
     font-size: 0.8rem;
 }
+#attendance p {
+    font-size: 1.25rem;
+}
 
 #overview {
-    max-width: 600px;
+    max-width: 80vw;
     margin: 1.25rem auto;
     font-size: 1.25rem;
 }
