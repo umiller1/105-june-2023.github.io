@@ -1,0 +1,6 @@
+.narrow {
+    width: 200px;
+    display: inline-block;
+    height: 300px;
+    background-color: lightblue;
+}
