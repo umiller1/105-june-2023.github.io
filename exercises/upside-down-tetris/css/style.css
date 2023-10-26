@@ -1,0 +1,34 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Upside-down Tetris assignment.
+
+    Good luck, and have fun!
+*/
+.tetris-block {
+    border-width: 10px;
+    border-style: outset;
+    display: inline-block;
+    padding: 15px;
+}
+.wide {
+    padding: 15px 100px;
+}
+
+.orange {
+    background-color: orange;
+    border-color: #f09c00;
+}
+.pink {
+    background-color: #ffbbbb;
+    border-color: #ffbbbb;
+}
+.teal {
+    background-color: teal;
+    border-color: teal;
+}
+
+.empty {
+    border-color: transparent;
+}
