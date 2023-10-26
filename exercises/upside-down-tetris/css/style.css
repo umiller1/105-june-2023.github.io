@@ -8,8 +8,9 @@
 */
 .tetris-block {
     border-width: 10px;
-    border-style: outset;
+    border-style: double groove;
     display: inline-block;
+    border-radius: 10px 20px;
     padding: 15px;
 }
 .wide {
@@ -17,8 +18,8 @@
 }
 
 .orange {
-    background-color: orange;
-    border-color: #f09c00;
+    background-color: #ffa600;
+    border-color: #ffa600;
 }
 .pink {
     background-color: #ffbbbb;
