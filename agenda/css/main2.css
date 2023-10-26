@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+header {
+    text-align: center;
+    width: 90vw;
+    max-width: 800px;
+    margin: 1.25rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header #overview {
+    text-align: left;
+}
+header #attendance {
+    margin: 1rem auto;
+}
+
+main {
+    display: grid;
+    width: 90vw;
+    max-width: 800px;
+    margin: 1.25rem auto;
+    gap: 1.25rem;
+    grid-template-columns: minmax(0px, 1fr) auto minmax(0px, 1fr);
+    grid-template-areas:
+        "timeline line fact"
+    ;
+}
+#timeline {
+    grid-area: timeline;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+.line {
+    grid-area: line;
+    width: 1vw;
+    max-width: 2px;
+    height: 100%;
+    background-color: #ffbf00;
+}
+#fact {
+    grid-area: fact;
+    display: grid;
+    grid-template-rows: auto auto minmax(0px, 1fr);
+    grid-template-areas:
+    "intro"
+    "fact"
+    "image";
+}
+#fact strong {
+    grid-area: intro;
+    text-align: center;
+}
+#fact em {
+    grid-area: fact;
+    margin: .75rem 0px 1.25rem;
+}
+#fact img {
+    grid-area: image;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+}
+footer hr {
+    border: none;
+    border-bottom: 2px solid #ffbf00;
+}
+footer h4 {
+    margin: 1.25rem auto;
+}
+#dinners {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    width: 90vw;
+    max-width: 800px;
+    margin: 1.25rem auto;
+    justify-content: center;
+}
