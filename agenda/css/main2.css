@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -7,7 +8,9 @@ img {
     width: 100%;
     object-fit: contain;
 }
-
+h1 {
+    font-family: 'Agbalumo';
+}
 header {
     text-align: center;
     width: 90vw;

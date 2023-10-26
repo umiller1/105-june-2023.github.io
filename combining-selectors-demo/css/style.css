@@ -1,6 +1,6 @@
 #navbar {
     text-align: center;
-    padding: 23px;
+    padding: 24px;
     background-color: blue;
 }
 #navbar a {
@@ -20,23 +20,32 @@ p.warning a {
     color: orange;
 }
 
+div.warning {
+    color: coral;
+}
+
+div.warning a {
+    color: blue;
+    font-size: 48px;
+    display: block;
+}
+
 ul {
     color: green;
 }
+
 ul a {
-    color: palevioletred;
-}
-
-
-ul li p a {
-    color: lime;
+    color: grey;
 }
 
 ul p a {
     color: purple;
 }
 
+ul li div a {
+    color: lightblue;
+}
 
 ul div a {
-    color: orange;
+    color: red;
 }
