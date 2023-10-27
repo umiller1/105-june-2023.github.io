@@ -1,98 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+img {
+    width: 100%;
+    object-fit: contain;
+}
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
-h1, h2 {
-    font-family: 'Staatliches', sans-serif;
-}
-h1 {
-    font-size: 3rem;
-    color: #00c7e6;
-}
-main {
-    width: 90vw;
-    margin: 1.25rem auto;
-}
-
-h1, h4, #attendance {
+header {
     text-align: center;
-}
-
-#attendance {
-    margin: 1.25rem auto;
-    max-width: 80vw;
-}
-#attendance .examples {
-    font-size: 0.8rem;
-}
-#attendance p {
-    font-size: 1.25rem;
-}
-
-#overview {
-    max-width: 80vw;
-    margin: 1.25rem auto;
-    font-size: 1.25rem;
-}
-
-#timeline {
+    width: 90vw;
     max-width: 800px;
-    margin: 0px auto;
-    list-style-type: "\1F319";
+    margin: 1.25rem auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    font-size: 1.25rem;
-}
-#timeline li {
-    padding-left: 0.5rem;
-}
-
-#fact {
-    max-width: 800px;
-    margin: 3rem auto 0px auto;
-    font-size: 1.125rem;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1.25rem;
     align-items: center;
 }
-#fact em, #fact img {
-    flex: 1;
+header #overview {
+    text-align: left;
+    font-size: 21px;
 }
-#fact img {
-    display: block;
-    max-width: 200px;
-    object-fit: cover;
+header #attendance {
+    margin: 1rem auto 1.5rem;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#attendance .examples {
+    font-size: 16px;
+}
+
+main {
+    display: grid;
+    width: 90vw;
+    max-width: 800px;
+    margin: 1.25rem auto;
+    gap: 1.25rem;
+    grid-template-columns: minmax(0px, 1fr) auto minmax(0px, 1fr);
+    grid-template-areas:
+        "timeline line fact"
+    ;
+}
+#timeline {
+    grid-area: timeline;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+    font-size: 21px;
+    justify-content: center;
+}
+.line {
+    grid-area: line;
+    width: 1vw;
+    max-width: 2px;
+    height: 100%;
+    background-color: #ffbf00;
+}
+#fact {
+    grid-area: fact;
+    display: grid;
+    grid-template-rows: auto auto minmax(0px, 1fr);
+    grid-template-areas:
+    "intro"
+    "fact"
+    "image";
+    font-size: 18px;
 }
 #fact strong {
-    display: block;
+    grid-area: intro;
     text-align: center;
-    flex: 100%;
 }
-hr {
-    margin: 1.5rem auto 1rem auto;
+#fact .thefact {
+    grid-area: fact;
+    margin: .75rem 0px 1.25rem;
+}
+#fact .frame {
+    grid-area: image;
+    height: 100%;
+    border: 10px ridge #ffbf00;
+    padding: 10px;
+    background-color: antiquewhite;
+    box-shadow:
+        inset 1px 1px 3px black,
+        inset -1px -1px 3px black
+    ;
+}
+.frame span {
+    box-shadow:
+        inset 1px 1px 5px black,
+        inset -1px -1px 5px black
+    ;
     display: block;
+    padding: 2px;
+}
+#fact .frame img {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+footer {
+    text-align: center;
+}
+footer hr {
     border: none;
-    border-bottom: 2px solid #00c7e6;
-    width: 100%;
+    border-bottom: 2px solid #ffbf00;
+}
+footer h4 {
+    margin: 1.25rem auto;
+    font-size: 1.5rem;
 }
 #dinners {
     display: flex;
-    text-align: center;
+    gap: 2rem;
     list-style-type: none;
-    gap: 3rem;
+    width: 90vw;
+    max-width: 800px;
+    margin: 1.25rem auto;
     justify-content: center;
-    margin-top: 1rem;
-}
-.ooostrong {
-    font-family: 'Staatliches', sans-serif;
-    font-size: 1.25em;
-    color: #00c7e6;
-    text-decoration: underline dotted;
+    font-size: 1.25rem;
 }
