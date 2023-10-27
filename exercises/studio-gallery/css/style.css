@@ -24,5 +24,5 @@ img {
     ;
 }
 .frame-1 img {
-    border-radius: 100%;
+    border: 0.75px solid #000000aa;
 }
