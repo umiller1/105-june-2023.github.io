@@ -1,0 +1,66 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+}
+.contain {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+p, li {
+    font-size: 1.125rem;
+}
+
+/* ABOUT PAGE */
+#abt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.frame {
+    width: 60vh;
+    height: 60vh;
+    border-radius: 100%;
+    border: 10px solid #ffc400;
+}
+.frame img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.content {
+    max-width: 500px;
+}
+.content h1 {
+    border-bottom: 5px solid #ffc400;
+    padding-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+.content h1 span {
+    color: #00D6FF;
+}
+.content ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0px 2rem;
+}
+.content .dot {
+    color: #00D6FF;
+    font-size: 1.5rem;
+}
+.content p {
+    margin-bottom: 1rem;
+}
