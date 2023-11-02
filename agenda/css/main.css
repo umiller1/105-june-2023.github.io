@@ -65,7 +65,7 @@ main {
 #fact {
     grid-area: fact;
     display: grid;
-    grid-template-rows: auto auto minmax(0px, 1fr);
+    grid-template-rows: auto auto minmax(250px, 1fr);
     grid-template-areas:
     "intro"
     "fact"
@@ -98,6 +98,8 @@ main {
     ;
     display: block;
     padding: 2px;
+    width: 100%;
+    height: 100%;
 }
 #fact .frame img {
     height: 100%;
