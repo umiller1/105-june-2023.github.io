@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    width: 80vw;
+    margin: 0px auto;
+    padding: 25px 0px;
+    column-gap: 25px;
+    align-items: flex-start;
+    position: relative;
+}
+
+aside {
+    border-top: 2px solid #ff6f00;
+    border-bottom: 2px solid #ff6f00;
+    padding: 25px;
+    background: linear-gradient(to right, #ffe2da, #ffe2daaa), url(../images/bunch-o-pastas.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    min-height: 200px;
+    position: sticky;
+    top: 25px;
+    width: 25%;
+    min-width: 150px;
+}
+
+aside h2 {
+    border-bottom: 2px solid #ff6f00;
+    padding-bottom: 5px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+aside ul a {
+    text-decoration: none;
+    color: #010101;
+}
+aside ul a:hover {
+    color: #ff6f00;
+}
+
+#main-content h1 {
+    font-size: 3rem;
+    color: #ff6f00;
+    margin-bottom: 15px;
+}
+#main-content p {
+    margin-bottom: 25px;
+}
+#main-content .images {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    margin-bottom: 25px;
+}
+#main-content .images div {
+    flex: 1;
+    height: 25vh;
+    min-height: 250px;
+}
+#main-content div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main-content h2 {
+    margin-bottom: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.flex-container p {
+    flex: 2;
+}
+.flex-container div {
+    flex: 1;
+    padding-bottom: 25px;
+}
+.flex-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.last-img {
+    height: 10vh;
+    min-height: 250px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
