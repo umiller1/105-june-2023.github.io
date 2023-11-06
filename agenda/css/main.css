@@ -34,6 +34,13 @@ header #attendance {
 #attendance .examples {
     font-size: 16px;
 }
+#attendance p span {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 2vh;
+    padding-top: 10px;
+    display: inline-block;
+}
 
 main {
     display: grid;
