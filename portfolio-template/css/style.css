@@ -1,0 +1,63 @@
+/* You may delete the comments. */
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+}
+
+/* Homepage Styles */
+#hero {
+    /* 
+        The height of 100vh makes your hero fill up your
+        screen. Change it if you want a smaller or larger
+        hero.
+
+        background-color is only here to show you how large
+        the hero is and where it is at. You MUST remove it.
+
+        background-image is going to the image used for the
+        hero. Replace the contents within the parenthesis.
+
+        background-size: cover; allows your hero to crop
+        without stretching and be it's full proportionate size.
+    */
+    height: 100vh;
+    background-color: yellow; /* remove this */
+    background-image: url(#);
+    background-size: cover;
+}
+
+/* Gallery Styles */
+#gallery {
+    /* 
+        The styles below are creating a two-column gallery.
+
+        display: grid; is turning this container into a grid
+        container. If you wish to create your gallery some
+        other way, this must be changed or removed.
+
+        grid-template-columns is creating 2 columns of 1
+        fractional width for your gallery items. Change this
+        if you wish to have more columns or different column
+        widths.
+
+        gap is putting a 100px gap between each column and
+        row. You may change this if you want different gap
+        sizing.
+    */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+#gallery img {
+    /*
+        This is allowing our images to be 100% of their
+        container. In this case, they are 100% of the grid
+        column they're being held within.
+    */
+    width: 100%;
+}
+/* You may delete the comments. */
