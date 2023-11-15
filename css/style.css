@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&family=Staatliches&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+h3, h4, p, a, li {
+    font-family: 'Staatliches', sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, #00000088, #00000088),url(../images/hero2.gif);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1, h4 {
+    text-shadow: -3px 2px 2px black;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+h4 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: #d4ffa3;
+    margin: 0.5rem 0px 3rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+}
+nav a {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    color: #222;
+    background-color: #d4ffa3;
+    text-decoration: none;
+    padding: 12px 0px;
+    font-size: 1.125rem;
+    border-radius: 1rem;
+    transition: all 1s;
+}
+
+nav a:hover {
+    flex: 2;
+    letter-spacing: 0.1em;
+}
