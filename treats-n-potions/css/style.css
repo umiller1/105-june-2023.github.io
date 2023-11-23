@@ -4,6 +4,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+    background: linear-gradient(25deg, #fffe, #fffe), url(../images/pattern.svg);
+    background-size: 50%;
+}
 img {
     width: 100%;
     object-fit: cover;
@@ -34,6 +38,25 @@ h3, p, a {
     max-width: 1000px;
     margin: 0px auto;
 }
+.btn {
+    border: 1px solid #df0091;
+    border-radius: 2rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #df0091;
+    text-decoration: none;
+    font-weight: 200;
+    text-transform: capitalize;
+    transition: all 0.75s;
+}
+.btn:hover {
+    box-shadow:
+        inset 0px 0px 50px 1px #df0091,
+        0px 0px 30px 1px #df0091;
+    color: white;
+}
 
 header {
     height: 100vh;
@@ -43,6 +66,7 @@ header {
         "nav"
         "hero"
     ;
+    overflow-y: hidden;
 }
 
 nav {
@@ -70,10 +94,110 @@ nav #witch i:last-child {
 }
 
 #hero {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
     grid-area: hero;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 #hero img {
     height: 100%;
+}
+#hero div:first-of-type {
+    flex: 2;
+    height: 100%;
+}
+#hero div:last-of-type {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10vw;
+}
+#hero h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: calc(50vh - 100px);
+    min-height: 200px;
+    margin: 50px auto;
+}
+.card {
+    flex: 1;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+.card h2, .card a {
+    position: absolute;
+    transition: all 0.5s;
+}
+.card a, .card:hover h2 {
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover a, .card h2 {
+    visibility: visible;
+    opacity: 1;
+}
+.card a {
+    width: 90%;
+    display: block;
+}
+#c1 {
+    background: linear-gradient(25deg, #000b, #000b), url(../images/c1.jpg);
+    background-size: cover;
+}
+#c2 {
+    background: linear-gradient(25deg, #000b, #000b), url(../images/c2.jpg);
+    background-size: cover;
+}
+#c3 {
+    background: linear-gradient(25deg, #000b, #000b), url(../images/c3.jpg);
+    background-size: cover;
+}
+
+#gall {
+    background: linear-gradient(25deg, #000b, #000b), url(../images/hero2.jpg);
+    background-size: cover;
+    height: 50vh;
+    min-height: 200px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding: 40px;
+    background-color: #222;
+}
+#foot-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+footer #foot-contain div {
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+footer #foot-contain div a {
+    color: white;
+    text-decoration: none;
+    display: block;
 }
